@@ -2,8 +2,8 @@
 
 x=`cat /etc/*-release | cut -d"=" -f2 | sed -n 9p | awk -F '[""]' '{print $2}'`
 
-
-    if [ "$x" = "Ubuntu 16.04.6 LTS" ] then 
+ if [ "$x" = "Ubuntu 16.04.6 LTS" ]
+ then 
         echo "S.O  reconhecido ..."
         sleep 5
         echo
@@ -14,7 +14,7 @@ x=`cat /etc/*-release | cut -d"=" -f2 | sed -n 9p | awk -F '[""]' '{print $2}'`
         echo 
         echo "Squid instalado com sucesso! Iniciando configuração aguarde..."
         sleep 5
-    else 
+ else 
         echo "S.O não reconhecido"
-    fi        
+ fi        
 source config-squid.sh
