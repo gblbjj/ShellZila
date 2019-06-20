@@ -18,9 +18,7 @@ case "$x" in
         echo 
         apt-get install default-jdk -y
         echo 
-        apt-get install openjdk-7-jre -y 
-        echo
-        apt-get install openjdk-7-jdk -y 
+        echo "jdk instalado com sucesso" 
     ;;
     CentOS)
         echo "S.O não reconhecido"
