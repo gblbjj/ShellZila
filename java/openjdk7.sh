@@ -14,9 +14,9 @@ case "$x" in
         echo "inicinado instalação openjdk-7"
         apt-get update -y    
         echo 
-        apt-get install default-jre
+        apt-get install default-jre -y 
         echo 
-        apt-get install default-jdk
+        apt-get install default-jdk -y
         echo 
         apt-get install openjdk-7-jre -y 
         echo
